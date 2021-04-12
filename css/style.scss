@@ -10,6 +10,7 @@ padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
     .navigacija{
         padding-top: .5em;
         width: 80%;
@@ -24,6 +25,9 @@ padding: 0px;
               a{
                   text-decoration: none;
                   color: white;
+                  img{
+                      
+                  }
               }
           }
         }
