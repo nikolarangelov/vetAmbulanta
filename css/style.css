@@ -5,10 +5,15 @@
   padding: 0px;
 }
 
+body {
+  height: 3000px;
+  font-family: 'Roboto', sans-serif;
+}
+
 .nav {
   width: 100%;
   height: 3em;
-  background-color: blue;
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,6 +23,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 2em;
 }
 
 .nav .navigacija {
@@ -46,14 +52,80 @@
           flex-direction: row;
 }
 
+.nav .navigacija ul li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
 .nav .navigacija ul li a {
   text-decoration: none;
-  color: white;
+  color: rgba(86, 86, 221, 0.87);
+  padding-right: 10px;
+}
+
+.nav .navigacija ul li a img {
+  border: chocolate 3px solid;
 }
 
 .nav .navigacija button {
   height: 2em;
-  border: yellow 2px solid;
-  border-radius: 3px;
+  border: solid;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 2px;
+  padding-left: 2px;
+  color: #fff;
+  background-color: #3f42f5;
+}
+
+.nav .navigacija button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 25% 25%;
+      grid-template-columns: 50% 25% 25%;
+  -ms-grid-rows: 40vh 40vh;
+      grid-template-rows: 40vh 40vh;
+  grid-gap: 10px;
+      grid-template-areas: "first second third" "first fourth fourth";
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero .item-1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: first;
+}
+
+.hero .item-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: second;
+}
+
+.hero .item-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: third;
+}
+
+.hero .item-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: fourth;
 }
 /*# sourceMappingURL=style.css.map */
