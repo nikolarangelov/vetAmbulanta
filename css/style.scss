@@ -11,12 +11,15 @@ body{height: 3000px;
 }
 .nav{
     width: 100%;
-    height: 3em;
-    background-color: transparent;
+    height: fit-content;
+   // background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2em;
+    font-size: 2em;
+    font-weight: bold;
+    // background-color: rgba(128, 128, 128, 0.397);
+    
    
     
     .navigacija{
@@ -32,33 +35,49 @@ body{height: 3000px;
           display: flex;
           flex-direction: row;
           li{
+              transition: transform .5s ease-in-out;
               &:hover{
-                  transform: scale(1.2);
-                  transition: transform .5s ease-in-out;
+                transition: transform .5s ease-in-out;
+                transform: scale(1.2);
               }
               a{
                   text-decoration: none;
-                  color: $logo_plava;
-                  padding-right: 10px;
+                  color: $font;
+                  padding-right: 1rem;
+                  &:hover{
+                      color: $logo_plava;
+                  }
                   img{
 
-                      border: chocolate 3px solid;
+                      width: 100px;
+                      height: 80px;
+                      margin-top: -.3em;
+                      &:hover{
+                        filter: gray; /* IE6-9 */
+                        -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+                        filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+                      }
+                          
+                          
+                      
                   }
               }
           }
         }
         button{
             height: 2em;
-            border:solid;
-            // border-radius: 20px;
-            padding-top: 1px;
-            padding-bottom: 1px;
-            padding-right: 2px;
-            padding-left: 2px;
+            border: 3px solid white;
+            width: 250px;
+            padding: 3px;
             color: #fff;
-            background-color: rgb(63, 66, 245);
+            background-color: $logo_plava;
+            border-radius: 15px;
+            transition: all .4s;
             &:hover{
                 transform: scale(1.2);
+                transition: all .4s;
+                background-color: gray;
+
             }
         }
     }
@@ -68,6 +87,7 @@ body{height: 3000px;
     // width: 100%;
     // height: 40vh;
 
+    margin-top: 3em;
     display: grid;
     grid-template-columns: 50% 25% 25%;
     grid-template-rows: 40vh 40vh ;

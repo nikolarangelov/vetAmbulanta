@@ -12,8 +12,9 @@ body {
 
 .nav {
   width: 100%;
-  height: 3em;
-  background-color: transparent;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +24,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 2em;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .nav .navigacija {
@@ -52,42 +54,69 @@ body {
           flex-direction: row;
 }
 
-.nav .navigacija ul li:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.nav .navigacija ul li {
   -webkit-transition: -webkit-transform .5s ease-in-out;
   transition: -webkit-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
   transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
 }
 
+.nav .navigacija ul li:hover {
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .nav .navigacija ul li a {
   text-decoration: none;
-  color: rgba(86, 86, 221, 0.87);
-  padding-right: 10px;
+  color: #4f4c43;
+  padding-right: 1rem;
+}
+
+.nav .navigacija ul li a:hover {
+  color: #0046a5;
 }
 
 .nav .navigacija ul li a img {
-  border: chocolate 3px solid;
+  width: 100px;
+  height: 80px;
+  margin-top: -.3em;
+}
+
+.nav .navigacija ul li a img:hover {
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
 }
 
 .nav .navigacija button {
   height: 2em;
-  border: solid;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-right: 2px;
-  padding-left: 2px;
+  border: 3px solid white;
+  width: 250px;
+  padding: 3px;
   color: #fff;
-  background-color: #3f42f5;
+  background-color: #0046a5;
+  border-radius: 15px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .nav .navigacija button:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  background-color: gray;
 }
 
 .hero {
+  margin-top: 3em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 25% 25%;
