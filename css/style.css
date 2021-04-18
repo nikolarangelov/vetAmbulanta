@@ -95,7 +95,7 @@ body {
   /* Microsoft Edge and Firefox 35+ */
 }
 
-.nav .navigacija button {
+.dugme {
   height: 2em;
   border: 3px solid white;
   width: 250px;
@@ -107,7 +107,7 @@ body {
   transition: all .4s;
 }
 
-.nav .navigacija button:hover {
+.dugme:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all .4s;
@@ -115,46 +115,67 @@ body {
   background-color: gray;
 }
 
-.hero {
-  margin-top: 3em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 25% 25%;
-      grid-template-columns: 50% 25% 25%;
-  -ms-grid-rows: 40vh 40vh;
-      grid-template-rows: 40vh 40vh;
-  grid-gap: 10px;
-      grid-template-areas: "first second third" "first fourth fourth";
+.prvi {
+  background-image: url("https://picsum.photos/1898/560");
+  background-position: center;
+  background-size: cover;
+  width: 1898px;
+  height: 560px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.hero img {
-  width: 100%;
-  height: 100%;
+.prvi h1 {
+  color: blue;
 }
 
-.hero .item-1 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: first;
+.special {
+  background-color: rgba(106, 188, 235, 0.404);
+  padding: 2em;
 }
 
-.hero .item-2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: second;
+.special .container .row .col-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.hero .item-3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: third;
+.special .container .row .col-12 span {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 1em;
 }
 
-.hero .item-4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: fourth;
+.special .container .row .col-12 .fas.fa-paw.large {
+  font-size: 5em;
+  color: #0046a5;
+  margin-bottom: .5em;
+}
+
+.special .container .row .col-12 .dugme {
+  height: 3em;
+  font-size: 2em;
+  padding: .2em;
+}
+
+.special .container .row .col-12 .dugme p {
+  margin: 0%;
 }
 /*# sourceMappingURL=style.css.map */
