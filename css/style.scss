@@ -124,24 +124,27 @@ body{height: 3000px;
 //    }
 // }
 
-.prvi{
-    background-image: url("https://picsum.photos/1898/560");
-    background-position: center;
-    background-size: cover;
-    width: 1898px;
-    height: 560px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 
-    h1{
-       // text-align: center;
-        color: blue;
-        
-        
-    }
+.hero{
+    .carousel-item.active.prvi{
+        background-image: url("https://picsum.photos/1898/560");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 1898px;
+        height: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            color:$logo_plava;
+            font-weight: 700;
+            font-size:7em;
+        }
 }
+}
+
 
 
 
@@ -178,7 +181,7 @@ body{height: 3000px;
                     height: 3em;
                     font-size: 2em;
                     padding: .2em;
-                    i{}
+                    
 
                 }
             }

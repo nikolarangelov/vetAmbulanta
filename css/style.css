@@ -115,10 +115,11 @@ body {
   background-color: gray;
 }
 
-.prvi {
+.hero .carousel-item.active.prvi {
   background-image: url("https://picsum.photos/1898/560");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 1898px;
   height: 560px;
   display: -webkit-box;
@@ -132,8 +133,10 @@ body {
           align-items: center;
 }
 
-.prvi h1 {
-  color: blue;
+.hero .carousel-item.active.prvi h1 {
+  color: #0046a5;
+  font-weight: 700;
+  font-size: 7em;
 }
 
 .special {
