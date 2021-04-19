@@ -10,6 +10,40 @@ body{height: 3000px;
     
     
 }
+header{
+   
+    label{
+        font-size: 1.5em;
+    }
+    
+   ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    
+
+    li{
+        font-size: 1em;
+        margin-top: .5em;
+        margin-left: 1em;
+    
+        a{
+            margin-right: 1em;
+        }
+    }
+    .fb{
+        font-size: 2.5em;
+        margin-right: 1em;
+        margin-top: .3em;
+        &:hover{
+            filter: gray; /* IE6-9 */
+                        -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+                        filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+        }
+    }
+   }
+}
 .nav{
     width: 100%;
     height: fit-content;
@@ -79,6 +113,14 @@ body{height: 3000px;
         background-color: $logo_plava;
         border-radius: 15px;
         transition: all .4s;
+        a{
+            text-decoration: none;
+            color: azure;
+            &:hover{
+                text-decoration: none;
+                color: azure;
+            }
+        }
         &:hover{
             transform: scale(1.2);
             transition: all .4s;
@@ -86,43 +128,8 @@ body{height: 3000px;
 
         }
     }
-// .hero{
-    // background-image: url(/assets/veterinarian-doctor-with-dog-cat-counter-vet-clinic_36082-523.jpg);
-    // width: 100%;
-    // height: 40vh;
-
-//     margin-top: 3em;
-//     display: grid;
-//     grid-template-columns: 50% 25% 25%;
-//     grid-template-rows: 40vh 40vh ;
-//     grid-gap: 10px;
-//     grid-template-areas: 
-//     "first second third"
-//     "first fourth fourth"
-//     ;
-
-//     img{
-//         width: 100%;
-//         height: 100%;
-//     }
-
-//     .item-1{
-//         grid-area: first;
-        
-//     }
-//    .item-2{
-//        grid-area: second;
-       
-//    }
-//    .item-3{
-//        grid-area: third;
-       
-//    }
-//    .item-4{
-//        grid-area: fourth;
-     
-//    }
-// }
+// Hero Sekcija
+ 
 
 
 .hero{
@@ -138,8 +145,8 @@ body{height: 3000px;
         align-items: center;
 
         h1{
-            color:$logo_plava;
-            font-weight: 700;
+            color:#FFF;
+            font-weight: 500;
             font-size:7em;
         }
 }
@@ -173,6 +180,12 @@ body{height: 3000px;
                     font-size: 5em;
                     color: $logo_plava;
                     margin-bottom: .5em;
+                    &:hover{
+                        transform: scale(1.2);
+                         transition: all .4s;
+                        color: gray;
+                    }
+                    
                 }
                 .dugme{
                     p{
@@ -184,6 +197,8 @@ body{height: 3000px;
                     
 
                 }
+
+                
             }
         }
     }

@@ -10,6 +10,49 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+header label {
+  font-size: 1.5em;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+header ul li {
+  font-size: 1em;
+  margin-top: .5em;
+  margin-left: 1em;
+}
+
+header ul li a {
+  margin-right: 1em;
+}
+
+header ul .fb {
+  font-size: 2.5em;
+  margin-right: 1em;
+  margin-top: .3em;
+}
+
+header ul .fb:hover {
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
+}
+
 .nav {
   width: 100%;
   height: -webkit-fit-content;
@@ -107,6 +150,16 @@ body {
   transition: all .4s;
 }
 
+.dugme a {
+  text-decoration: none;
+  color: azure;
+}
+
+.dugme a:hover {
+  text-decoration: none;
+  color: azure;
+}
+
 .dugme:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -134,8 +187,8 @@ body {
 }
 
 .hero .carousel-item.active.prvi h1 {
-  color: #0046a5;
-  font-weight: 700;
+  color: #FFF;
+  font-weight: 500;
   font-size: 7em;
 }
 
@@ -170,6 +223,14 @@ body {
   font-size: 5em;
   color: #0046a5;
   margin-bottom: .5em;
+}
+
+.special .container .row .col-12 .fas.fa-paw.large:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  color: gray;
 }
 
 .special .container .row .col-12 .dugme {
