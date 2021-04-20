@@ -26,6 +26,12 @@ header ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style-type: none;
+  background: #E0EAFC;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#CFDEF3), to(#E0EAFC));
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header ul li {
@@ -36,12 +42,18 @@ header ul li {
 
 header ul li a {
   margin-right: 1em;
+  color: #0046a5;
+}
+
+header ul li a:hover {
+  text-decoration: none;
+  color: gray;
 }
 
 header ul .fb {
   font-size: 2.5em;
   margin-right: 1em;
-  margin-top: .3em;
+  margin-top: .2em;
 }
 
 header ul .fb:hover {

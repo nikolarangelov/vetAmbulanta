@@ -21,21 +21,33 @@ header{
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
+
+    background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     
 
     li{
         font-size: 1em;
         margin-top: .5em;
         margin-left: 1em;
+        
     
         a{
             margin-right: 1em;
+            color: $logo_plava;
+            &:hover{
+               text-decoration: none; 
+               color: gray;
+            }
+           
         }
     }
     .fb{
         font-size: 2.5em;
         margin-right: 1em;
-        margin-top: .3em;
+        margin-top: .2em;
         &:hover{
             filter: gray; /* IE6-9 */
                         -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
