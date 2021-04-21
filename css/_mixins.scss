@@ -1,0 +1,37 @@
+// h2 mixin
+@mixin iconH2 {
+    i{
+        font-size: 5em;
+        color: $logo_plava;
+        margin-bottom: .5em;
+        &:hover{
+            transform: scale(1.2);
+             transition: all .4s;
+            color: gray;
+        }
+    }
+    h2{
+        transition: .4s all;
+        font-size: 4em;
+        &:hover{
+            transform: scale(1.5) ;
+            transition: .4s all;
+            color: gray;
+        }
+    }
+}
+@mixin flex-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+}
+@mixin darken {
+    background-color: rgba(128, 128, 128, 0.472);
+        height: 100%;
+        width:100%;
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        color: #fff;
+}

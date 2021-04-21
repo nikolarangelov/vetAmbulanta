@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 *{box-sizing: border-box;
 margin: 0px;
 padding: 0px;
@@ -59,13 +60,12 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 .nav{
     width: 100%;
     height: fit-content;
-   // background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2em;
     font-weight: bold;
-    // background-color: rgba(128, 128, 128, 0.397);
+   
     
     
    
@@ -170,7 +170,7 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 
 
 
-
+// Zašto izabrati baš nas
 .special{
     
     background-color: $bg-color;
@@ -187,7 +187,18 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
                     text-align: center;
                     font-size: 2.5em;
                     margin-bottom: 1em;
+                    color: gray;
                 }
+                h2{
+                    font-size: 4em;
+                    transition: all .4s;
+                    &:hover{
+                        transform: scale(1.2);
+                         transition: all .4s;
+                         
+                    }
+                }
+               
                 .fas.fa-paw.large{
                     font-size: 5em;
                     color: $logo_plava;
@@ -197,11 +208,13 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
                          transition: all .4s;
                         color: gray;
                     }
-                    
                 }
+                    
+                
                 .dugme{
                     p{
                         margin: 0%;
+                        
                     }
                     height: 3em;
                     font-size: 2em;
@@ -214,4 +227,30 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
             }
         }
     }
+}
+// Naš tim sekcija
+.about{
+    @include flex-center;
+    @include iconH2;
+.rados{
+    height: 70vh;
+    width: 40%;
+    background-image: url(/img/rados.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        .rados-darken{
+            bottom: 0px;
+        }
+    }
+
+    &-darken{
+        @include flex-center;
+        @include darken;
+
+    }
+}
+
 }

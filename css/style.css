@@ -229,6 +229,20 @@ header ul .fb:hover {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 1em;
+  color: gray;
+}
+
+.special .container .row .col-12 h2 {
+  font-size: 4em;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.special .container .row .col-12 h2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .special .container .row .col-12 .fas.fa-paw.large {
@@ -253,5 +267,86 @@ header ul .fb:hover {
 
 .special .container .row .col-12 .dugme p {
   margin: 0%;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about i {
+  font-size: 5em;
+  color: #0046a5;
+  margin-bottom: .5em;
+}
+
+.about i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  color: gray;
+}
+
+.about h2 {
+  -webkit-transition: .4s all;
+  transition: .4s all;
+  font-size: 4em;
+}
+
+.about h2:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: .4s all;
+  transition: .4s all;
+  color: gray;
+}
+
+.about .rados {
+  height: 70vh;
+  width: 40%;
+  background-image: url(/img/rados.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.about .rados:hover .rados-darken {
+  bottom: 0px;
+}
+
+.about .rados-darken {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(128, 128, 128, 0.472);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
