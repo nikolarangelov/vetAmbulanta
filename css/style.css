@@ -181,7 +181,7 @@ header ul .fb:hover {
 }
 
 .hero .carousel-item.active.prvi {
-  background-image: url("https://picsum.photos/1898/560");
+  background-image: url("/assets/ambulanta slika uredjena br3.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -196,12 +196,21 @@ header ul .fb:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hero .carousel-item.active.prvi h1 {
-  color: #FFF;
+  color: #0046a5;
   font-weight: 500;
   font-size: 7em;
+}
+
+.hero .carousel-item.active.prvi span {
+  color: white;
+  font-size: 2em;
 }
 
 .special {
@@ -324,7 +333,9 @@ header ul .fb:hover {
 }
 
 .about .rados:hover .rados-darken {
-  bottom: 0px;
+  left: 0px;
+  -webkit-transition: all .9s;
+  transition: all .9s;
 }
 
 .about .rados-darken {
@@ -345,8 +356,106 @@ header ul .fb:hover {
   height: 100%;
   width: 100%;
   position: absolute;
-  bottom: -100%;
-  left: 0;
+  left: -100%;
+  bottom: 0;
   color: #fff;
+  -webkit-transition: all .9s;
+  transition: all .9s;
+}
+
+.grid {
+  margin-top: 2em;
+  height: 50vh;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 100% 100%;
+      grid-template-rows: 100% 100%;
+      grid-template-areas: "first second" "third fourth";
+}
+
+.grid-first {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: first;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(/img/jovana.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.grid-second {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: second;
+  background-color: bisque;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-third {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: third;
+  background-color: brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-fourth {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: fourth;
+  background-color: #9487de;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

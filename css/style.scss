@@ -146,7 +146,7 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 
 .hero{
     .carousel-item.active.prvi{
-        background-image: url("https://picsum.photos/1898/560");
+        background-image: url("/assets/ambulanta\ slika\ uredjena\ br3.png");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -155,11 +155,16 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
 
         h1{
-            color:#FFF;
+            color:$logo_plava;
             font-weight: 500;
             font-size:7em;
+        }
+        span{
+            color: white;
+            font-size: 2em;
         }
 }
 }
@@ -240,17 +245,63 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
     background-size: cover;
     position: relative;
     overflow: hidden;
+   
     &:hover{
         .rados-darken{
-            bottom: 0px;
+            left: 0px;
+            transition: all .9s;
+            
         }
     }
 
     &-darken{
         @include flex-center;
         @include darken;
+        transition: all .9s;
+        
+        span{
+           
+        }
+        
 
     }
 }
+
+}
+.grid{
+    margin-top: 2em;
+    height: 50vh;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 100% 100% ;
+    grid-template-areas: 
+    "first second"
+    "third fourth"
+    ;
+    &-first{
+        grid-area: first;
+        background-color: aqua;
+        @include flex-center;
+        background-image: url(/img/jovana.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &-second{
+        grid-area: second;
+        background-color: bisque;
+        @include flex-center;
+    }
+    &-third{
+        grid-area: third;
+        background-color: brown;
+        @include flex-center;
+    }
+    &-fourth{
+        grid-area: fourth;
+        background-color: rgb(148, 135, 222);
+        @include flex-center;
+    }
+    
 
 }
