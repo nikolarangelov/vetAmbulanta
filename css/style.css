@@ -6,8 +6,12 @@
 }
 
 body {
-  height: 3000px;
+  height: 30000px;
   font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
 }
 
 header label {
@@ -365,20 +369,24 @@ header ul .fb:hover {
 
 .grid {
   margin-top: 2em;
+  margin-right: 1.5em;
+  margin-bottom: 5em;
+  max-width: 100%;
   height: 50vh;
   display: -ms-grid;
   display: grid;
-  grid-gap: 1em;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: 100% 100%;
-      grid-template-rows: 100% 100%;
-      grid-template-areas: "first second" "third fourth";
+  grid-gap: .5em;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 100% 100% 100%;
+      grid-template-rows: 100% 100% 100%;
+      grid-template-areas: "first first second second" "third third fourth fourth" ". fifth fifth .";
 }
 
 .grid-first {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: first;
   background-color: aqua;
   display: -webkit-box;
@@ -394,14 +402,12 @@ header ul .fb:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(/img/jovana.png);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .grid-second {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: second;
   background-color: bisque;
   display: -webkit-box;
@@ -422,6 +428,7 @@ header ul .fb:hover {
 .grid-third {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: third;
   background-color: brown;
   display: -webkit-box;
@@ -441,7 +448,8 @@ header ul .fb:hover {
 
 .grid-fourth {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: fourth;
   background-color: #9487de;
   display: -webkit-box;
@@ -457,5 +465,30 @@ header ul .fb:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.grid-fifth {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: fifth;
+  background-color: #9bde87;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services {
+  margin-top: 80%;
 }
 /*# sourceMappingURL=style.css.map */
