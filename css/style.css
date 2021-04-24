@@ -372,14 +372,14 @@ header ul .fb:hover {
   margin-right: 1.5em;
   margin-bottom: 5em;
   max-width: 100%;
-  height: 50vh;
+  height: 90vh;
   display: -ms-grid;
   display: grid;
   grid-gap: .5em;
   -ms-grid-columns: 25% 25% 25% 25%;
       grid-template-columns: 25% 25% 25% 25%;
-  -ms-grid-rows: 100% 100% 100%;
-      grid-template-rows: 100% 100% 100%;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: "first first second second" "third third fourth fourth" ". fifth fifth .";
 }
 
@@ -486,9 +486,5 @@ header ul .fb:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.services {
-  margin-top: 80%;
 }
 /*# sourceMappingURL=style.css.map */
