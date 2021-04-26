@@ -1,0 +1,45 @@
+[10-Apr-2021 16:26:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\themes\oceanwp\functions.php:849) in C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\pluggable.php on line 1329
+[10-Apr-2021 16:26:50 UTC] PHP Stack trace:
+[10-Apr-2021 16:26:50 UTC] PHP   1. {main}() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-admin\themes.php:0
+[10-Apr-2021 16:26:50 UTC] PHP   2. require_once() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-admin\themes.php:10
+[10-Apr-2021 16:26:50 UTC] PHP   3. do_action() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-admin\admin.php:259
+[10-Apr-2021 16:26:50 UTC] PHP   4. WP_Hook->do_action() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\plugin.php:484
+[10-Apr-2021 16:26:50 UTC] PHP   5. WP_Hook->apply_filters() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\class-wp-hook.php:316
+[10-Apr-2021 16:26:50 UTC] PHP   6. TGM_Plugin_Activation->install_plugins_page() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\class-wp-hook.php:292
+[10-Apr-2021 16:26:50 UTC] PHP   7. TGM_Plugin_Activation->do_plugin_install() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\themes\oceanwp\inc\plugins\class-tgm-plugin-activation.php:658
+[10-Apr-2021 16:26:50 UTC] PHP   8. TGM_Plugin_Activation->activate_single_plugin() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\themes\oceanwp\inc\plugins\class-tgm-plugin-activation.php:818
+[10-Apr-2021 16:26:50 UTC] PHP   9. activate_plugin() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\themes\oceanwp\inc\plugins\class-tgm-plugin-activation.php:957
+[10-Apr-2021 16:26:50 UTC] PHP  10. do_action() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-admin\includes\plugin.php:701
+[10-Apr-2021 16:26:50 UTC] PHP  11. WP_Hook->do_action() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\plugin.php:484
+[10-Apr-2021 16:26:50 UTC] PHP  12. WP_Hook->apply_filters() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\class-wp-hook.php:316
+[10-Apr-2021 16:26:50 UTC] PHP  13. Ocean_Extra_Theme_Wizard::install() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\class-wp-hook.php:292
+[10-Apr-2021 16:26:50 UTC] PHP  14. wp_safe_redirect() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\plugins\ocean-extra\includes\wizard\wizard.php:45
+[10-Apr-2021 16:26:50 UTC] PHP  15. wp_redirect() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\pluggable.php:1437
+[10-Apr-2021 16:26:50 UTC] PHP  16. header() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\pluggable.php:1329
+[10-Apr-2021 16:26:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\themes\oceanwp\functions.php:849) in C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\pluggable.php on line 1332
+[10-Apr-2021 16:26:50 UTC] PHP Stack trace:
+[10-Apr-2021 16:26:50 UTC] PHP   1. {main}() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-admin\themes.php:0
+[10-Apr-2021 16:26:50 UTC] PHP   2. require_once() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-admin\themes.php:10
+[10-Apr-2021 16:26:50 UTC] PHP   3. do_action() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-admin\admin.php:259
+[10-Apr-2021 16:26:50 UTC] PHP   4. WP_Hook->do_action() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\plugin.php:484
+[10-Apr-2021 16:26:50 UTC] PHP   5. WP_Hook->apply_filters() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\class-wp-hook.php:316
+[10-Apr-2021 16:26:50 UTC] PHP   6. TGM_Plugin_Activation->install_plugins_page() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\class-wp-hook.php:292
+[10-Apr-2021 16:26:50 UTC] PHP   7. TGM_Plugin_Activation->do_plugin_install() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\themes\oceanwp\inc\plugins\class-tgm-plugin-activation.php:658
+[10-Apr-2021 16:26:50 UTC] PHP   8. TGM_Plugin_Activation->activate_single_plugin() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\themes\oceanwp\inc\plugins\class-tgm-plugin-activation.php:818
+[10-Apr-2021 16:26:50 UTC] PHP   9. activate_plugin() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\themes\oceanwp\inc\plugins\class-tgm-plugin-activation.php:957
+[10-Apr-2021 16:26:50 UTC] PHP  10. do_action() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-admin\includes\plugin.php:701
+[10-Apr-2021 16:26:50 UTC] PHP  11. WP_Hook->do_action() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\plugin.php:484
+[10-Apr-2021 16:26:50 UTC] PHP  12. WP_Hook->apply_filters() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\class-wp-hook.php:316
+[10-Apr-2021 16:26:50 UTC] PHP  13. Ocean_Extra_Theme_Wizard::install() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\class-wp-hook.php:292
+[10-Apr-2021 16:26:50 UTC] PHP  14. wp_safe_redirect() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\plugins\ocean-extra\includes\wizard\wizard.php:45
+[10-Apr-2021 16:26:50 UTC] PHP  15. wp_redirect() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\pluggable.php:1437
+[10-Apr-2021 16:26:50 UTC] PHP  16. header() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\pluggable.php:1332
+[10-Apr-2021 16:33:43 UTC] PHP Warning:  unlink(): http does not allow unlinking in C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\plugins\ocean-extra\includes\panel\classes\importers\class-settings-importer.php on line 28
+[10-Apr-2021 16:33:43 UTC] PHP Stack trace:
+[10-Apr-2021 16:33:43 UTC] PHP   1. {main}() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-admin\admin-ajax.php:0
+[10-Apr-2021 16:33:43 UTC] PHP   2. do_action() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-admin\admin-ajax.php:187
+[10-Apr-2021 16:33:43 UTC] PHP   3. WP_Hook->do_action() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\plugin.php:484
+[10-Apr-2021 16:33:43 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\class-wp-hook.php:316
+[10-Apr-2021 16:33:43 UTC] PHP   5. OceanWP_Demos->ajax_import_theme_settings() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-includes\class-wp-hook.php:292
+[10-Apr-2021 16:33:43 UTC] PHP   6. OWP_Settings_Importer->process_import_file() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\plugins\ocean-extra\includes\panel\demos.php:1287
+[10-Apr-2021 16:33:43 UTC] PHP   7. unlink() C:\Users\Standard\Local Sites\veterinarska-ambulanta\app\public\wp-content\plugins\ocean-extra\includes\panel\classes\importers\class-settings-importer.php:28

@@ -259,9 +259,7 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
         @include darken;
         transition: all .9s;
         
-        span{
-           
-        }
+        
         
 
     }
@@ -277,7 +275,7 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
     display: grid;
     grid-gap: .5em;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
     grid-template-areas: 
     "first first second second"
     "third third fourth fourth"
@@ -314,5 +312,8 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 
 }
 // USLUGE
+<<<<<<< HEAD
 .services{
 }
+=======
+>>>>>>> e49bf189c3a86652cb2cfc6734c2884614f7a939
