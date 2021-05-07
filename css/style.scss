@@ -4,7 +4,7 @@
 margin: 0px;
 padding: 0px;
 }
-body{height: 30000px;
+body{// height: 30000px;
     font-family: 'Roboto', sans-serif;
     
     
@@ -66,6 +66,7 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
     font-size: 2em;
     font-weight: bold;
    
+   
     
     
    
@@ -76,22 +77,69 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        .toggle-button{
+            position: absolute;
+            top: 5em;
+            right: 1rem;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 31px;
+            height: 21px;
+            @media (max-width: 400px) {
+                display: flex;
+            }
+            .bar{
+                height: 3px;
+                width: 100%;
+                background-color: black;
+                border-radius: 10px;
+            }
+        }
+        // --------------------------------------------------------
+
+/*Proveriti gde treba da ide ovaj query*/
+        @media (max-width: 400px) {
+          flex-direction: column;
+          align-items: flex-start;
+          }
         
     
         ul{
           list-style: none;
           display: flex;
           flex-direction: row;
+          @media (max-width: 400px) {
+           width: 100%;
+           flex-direction: column;
+          }
           li{
               transition: transform .5s ease-in-out;
               &:hover{
                 transition: transform .5s ease-in-out;
                 transform: scale(1.2);
               }
+              @media (max-width: 400px) {
+               text-align: center;
+              }
+              .active{
+                @media (max-width: 400px) {
+                   display:flex ;
+                  }
+              }
+            //   ----------------------------------------------------------------
+           
               a{
                   text-decoration: none;
                   color: $font;
                   padding-right: 1rem;
+                  //------------------------------------------------------------
+                  @media (max-width: 400px) {
+                  display: none;
+                  width: 100%;
+                }
+                // ---------------------------------------------------------------
                   &:hover{
                       color: $logo_plava;
                   }
@@ -109,6 +157,11 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
                           
                       
                   }
+                //   .active{
+                //     @media (max-width: 400px) {
+                //        display:flex ;
+                //       }
+                //   }
               }
           }
         }
@@ -325,7 +378,17 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
         margin-bottom: 1em;
     }
     h3{
-        &:hover{
+        /* Firefox */
+        -moz-transition: all .5s ease-in;
+        /* WebKit */
+        -webkit-transition: all .5s ease-in;
+        /* Opera */
+        -o-transition: all .5s ease-in;
+        /* Standard */
+         transition: all .5s ease-in;
+         border-radius: 20px;
+       
+         &:hover{
             padding: .5em;
             color: black;
         background-color: yellow;
@@ -341,9 +404,23 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
         }
     }
 }
+            /*Galerija-------------------------------------------------*/
+
+.pictures{
+    @include iconH2;
+    @include flex-center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+
+
 .galerija{
     display: grid;
     grid-template-columns: repeat(3, 200px);
+    
     justify-content: center;
     align-items: center;
     grid-gap: 10px;
@@ -376,3 +453,64 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
         align-items: center;
     }
 }
+/*Kontakt sekcija*/
+
+.kontakt{
+    @include iconH2;
+    @include flex-center;
+    background-color: $bg-color;
+    padding: 10px;
+    .info{
+        display: flex;
+        flex-direction: row;
+        .brojevi{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            //align-items: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            margin-right: 1em;
+            span{
+                font-size: 2em;
+
+            }
+        }
+    }
+    
+    h2{
+        margin-bottom: 1em;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 25px;
+    display: none;
+}
+
+
+// O nama
+.oNama{
+    @include iconH2;
+    @include flex-center;
+    margin-top: 2em;
+    padding: 2em;
+    p{
+        font-size: 2em;
+    }
+}
+
+
+// Footer
+.footer {
+    position: bottom 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 128, 64, 0.65);
+    color: white;
+    text-align: center;
+  }
+

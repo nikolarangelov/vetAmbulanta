@@ -28,13 +28,18 @@
     <!-- Nav 1920 -->
 <div class="nav">
     <div class="navigacija">
+        <div href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <ul>
-            <li><a href="/index.html"><img src="./img/FC3DD323-D0E8-4DE2-81DF-5CF8345FC735.png" alt="" width="60px" height="40px"></a></li>
-            <li><a href="./index.html">Početna</a></li>
-            <li><a href="#about">Naš tim</a></li>
-            <li><a href="usluge">Usluge</a></li>
-            <li><a href="galerija">Galerija</a></li>
-            <li><a href="kontakt">Kontakt</a></li>
+            <li class="navbar-links"><a href="/index.html"><img src="./img/FC3DD323-D0E8-4DE2-81DF-5CF8345FC735.png" alt="" width="60px" height="40px"></a></li>
+            <li class="navbar-links" ><a href="#hero">Početna</a></li>
+            <li class="navbar-links" ><a href="#nasTim">Naš tim</a></li>
+            <li class="navbar-links" ><a href="#usluge">Usluge</a></li>
+            <li class="navbar-links" ><a href="#galerija">Galerija</a></li>
+            <li class="navbar-links"><a href="#kontakt">Kontakt</a></li>
         </ul>
         <button class="dugme"><a href="https://g.page/Rados-Vet?share" target="_blank">Kako do nas?</a> <i class="fas fa-paw"></i></button>
     </div>
@@ -43,7 +48,7 @@
 
 <!-- Hero -->
 
-<div class="hero">
+<div class="hero" id="hero">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 pr-0 pl-0">
@@ -87,7 +92,7 @@
                 <i class="fas fa-paw large"></i>
                 <h2>Zašto izabrati baš nas?</h2>
                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quis libero maxime quam, culpa a totam quasi. Repellat blanditiis porro saepe labore totam reprehenderit nihil deleniti molestias? Neque, eaque vel.</span>
-                <button class="dugme"><p>O nama</p> <i class="fas fa-bone"></i></i></button>
+                <button class="dugme"><a href="#oNama">O nama</a> <br> <i class="fas fa-bone"></i></i></button>
                 
             </div>
         </div>
@@ -95,7 +100,7 @@
 </div>
 
     <!-- About Us -->
-<div class="about mt-3">
+<div class="about mt-3" id="nasTim">
     <i class="fas fa-clinic-medical"></i>
                 <h2 class="mb-5">Naš tim</h2>
     <div class="rados">
@@ -122,7 +127,7 @@
 <!-- END of about us -->
 
 <!-- Services -->
-<div class="col-12 services">
+<div class="col-12 services" id="usluge">
     <i class="fas fa-clipboard-list"></i>
     <h2>Usluge</h2>
     
@@ -147,18 +152,53 @@
 
 </div>
 <!-- GALERIJA -->
-
-<div class="galerija">
-    <img id="slika" src="https://source.unsplash.com/400x400?animal" alt="">
-    <img id="slika" src="https://source.unsplash.com/400x400?car" alt="">
-    <img id="slika" src="https://source.unsplash.com/400x400?montain" alt="">
-    <img id="slika" src="https://source.unsplash.com/400x400?beach" alt="">
-    <img id="slika" src="https://source.unsplash.com/400x400?city" alt="">
-    <img id="slika" src="https://source.unsplash.com/400x400?vet" alt="">
-    <img id="slika" src="https://source.unsplash.com/400x400?train" alt="">
-    <img id="slika" src="https://source.unsplash.com/400x400?cinema" alt="">
-    <img id="slika" src="https://source.unsplash.com/400x400?pc" alt="">
+<div class="pictures">
+    <i class="far fa-images"></i>
+    <h2>Galerija</h2>
+</div>
+<div class="galerija" id="galerija">
+    <img id="slika" src="https://source.unsplash.com/200x200?animal" alt="">
+    <img id="slika" src="https://source.unsplash.com/200x200?car" alt="">
+    <img id="slika" src="https://source.unsplash.com/200x200?montain" alt="">
+    <img id="slika" src="https://source.unsplash.com/200x200?beach" alt="">
+    <img id="slika" src="https://source.unsplash.com/200x200?city" alt="">
+    <img id="slika" src="https://source.unsplash.com/200x200?vet" alt="">
+    <img id="slika" src="https://source.unsplash.com/200x200?train" alt="">
+    <img id="slika" src="https://source.unsplash.com/200x200?cinema" alt="">
+    <img id="slika" src="https://source.unsplash.com200x200?pc" alt="">
     
+</div>
+
+<!-- Kontakt -->
+<div class="kontakt" id="kontakt">
+    <i class="far fa-address-card"></i>
+    <h2>Kontakt</h2>
+    <div class="info">
+        <div class="brojevi">
+            <span>E-mail: veterinar@gmail.com</span>
+            <span>Adresa: Kosovke Devojke 32</span>
+            <span>LIB:1234568</span>
+            <span>Datum osnivanja: 2015.</span>
+            <span>Radno vreme</span>
+            <span>Ponedeljak-Petak: od 10h do 20h</span>
+            <span>Subota: od 10h do 16h</span>
+            <span>Nedelja: od 10h do 14h</span>
+            <span>Dezurni veterinar: 018/123-456</span>
+            
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.1585754371818!2d21.90613221548736!3d43.33187067913365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0d095d90859%3A0x9b52185759888ce!2z0LLQtdGC0LXRgNC40L3QsNGA0YHQutCwINCw0LzQsdGD0LvQsNC90YLQsCDQt9CwINC60YPRm9C90LUg0ZnRg9Cx0LjQvNGG0LUgItCg0LDQtNC-0Ygt0JLQtdGCIg!5e0!3m2!1ssr!2srs!4v1620340956183!5m2!1ssr!2srs" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    
+</div>
+
+<!-- O nama -->
+<div class="oNama" id="oNama">
+    <i class="fas fa-user-md"></i>
+    <h2>Ukratko o nama</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestiae inventore error quibusdam. Eius tenetur exercitationem sequi. Accusantium mollitia iure tempora quod quam, illo magni. Aliquid officiis quae pariatur et?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quos, praesentium nam ut consectetur expedita repudiandae architecto? Modi provident nemo obcaecati laudantium reprehenderit, dolorem reiciendis aperiam sit optio quo repellendus.</p>
 </div>
 
 
@@ -174,11 +214,16 @@
 
 
 
+<!-- Footer -->
+<div class="footer">
+    <p>&copy;Radoš-Vet 2021 || <a href="https://github.com" target="_blank">NJ-DEVELOPMENT</a></p>
+  </div>
+  
 
 
 
-
-
+<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+<script src="./js/scrollTop.js"></script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
