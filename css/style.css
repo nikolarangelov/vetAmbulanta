@@ -259,7 +259,7 @@ header ul .fb:hover {
 }
 
 .hero .carousel-item.active.prvi {
-  background-image: url("/assets/ambulanta slika uredjena br3.png");
+  background-image: url("/assets/PrvaCarousel.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -284,11 +284,48 @@ header ul .fb:hover {
   color: #0046a5;
   font-weight: 500;
   font-size: 7em;
+  background-color: rgba(0, 0, 0, 0.692);
+  border-radius: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .hero .carousel-item.active.prvi span {
   color: white;
   font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.692);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.hero .carousel-item.active.drugi {
+  background-image: url("/assets/druga-carousel.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1898px;
+  height: 560px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .carousel-item.active.drugi h2 {
+  color: #4f4c43;
+  font-size: 5em;
+  background-color: rgba(255, 255, 255, 0.623);
+  border-radius: 10px;
+  padding: 2px;
 }
 
 .special {
@@ -612,12 +649,20 @@ header ul .fb:hover {
   margin-bottom: 1em;
 }
 
-.services span {
-  margin-top: .4em;
-  margin-bottom: 1em;
-}
-
-.services h3 {
+.services div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* Firefox */
   /* WebKit */
   -webkit-transition: all .5s ease-in;
@@ -627,7 +672,12 @@ header ul .fb:hover {
   border-radius: 20px;
 }
 
-.services h3:hover {
+.services div ul li {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.services div:hover {
   padding: .5em;
   color: black;
   background-color: yellow;
@@ -690,21 +740,21 @@ header ul .fb:hover {
 .galerija {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (200px)[3];
-      grid-template-columns: repeat(3, 200px);
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-gap: 10px;
+  grid-gap: 5px;
   height: 100vh;
 }
 
 .galerija img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   cursor: pointer;
 }
 
@@ -719,9 +769,8 @@ header ul .fb:hover {
 }
 
 #lightbox img {
-  max-width: 90%;
-  max-height: 80%;
-  padding: 4px;
+  max-width: 100%;
+  max-height: 100%;
   background-color: black;
   border: 2px solid white;
 }

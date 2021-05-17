@@ -199,7 +199,7 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 
 .hero{
     .carousel-item.active.prvi{
-        background-image: url("/assets/ambulanta\ slika\ uredjena\ br3.png");
+        background-image: url("/assets/PrvaCarousel.png");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -214,11 +214,37 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
             color:$logo_plava;
             font-weight: 500;
             font-size:7em;
+            background-color: rgba(0, 0, 0, 0.692);
+            border-radius: 10px;
+            padding-left: 2px;
+            padding-right: 2px;
         }
         span{
             color: white;
             font-size: 2em;
+            background-color: rgba(0, 0, 0, 0.692);
+            border-radius: 10px;
+            padding: 2px;
         }
+}
+.carousel-item.active.drugi{
+    background-image: url("/assets/druga-carousel.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1898px;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2{
+            color: $font;
+            font-size: 5em;
+            background-color: rgba(255, 255, 255, 0.623);
+            border-radius: 10px;
+            padding: 2px;
+    }
 }
 }
 
@@ -373,11 +399,15 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
     h2{
         margin-bottom: 1em;
     }
-    span{
-        margin-top: .4em;
-        margin-bottom: 1em;
-    }
-    h3{
+    
+    div{
+        @include flex-center;
+        ul{
+            li{
+                list-style: none;
+                font-size: 1.5em;
+            }
+        }
         /* Firefox */
         -moz-transition: all .5s ease-in;
         /* WebKit */
@@ -419,15 +449,16 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 
 .galerija{
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: 300px 300px 300px;
+ 
     
     justify-content: center;
     align-items: center;
-    grid-gap: 10px;
+    grid-gap: 5px;
     height: 100vh;
     img{
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         cursor: pointer;
     }
 }
@@ -441,9 +472,8 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
     display: none;
    
     img{
-        max-width: 90%;
-        max-height: 80%;
-        padding: 4px;
+        max-width: 100%;
+        max-height: 100%;
         background-color: black;
         border: 2px solid white;
     }
