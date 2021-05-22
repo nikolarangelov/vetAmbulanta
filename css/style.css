@@ -3,6 +3,7 @@
           box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -284,16 +285,16 @@ header ul .fb:hover {
   color: #0046a5;
   font-weight: 500;
   font-size: 7em;
-  background-color: rgba(0, 0, 0, 0.692);
+  background-color: rgba(255, 255, 255, 0.623);
   border-radius: 10px;
   padding-left: 2px;
   padding-right: 2px;
 }
 
 .hero .carousel-item.active.prvi span {
-  color: white;
+  color: black;
   font-size: 2em;
-  background-color: rgba(0, 0, 0, 0.692);
+  background-color: rgba(255, 255, 255, 0.623);
   border-radius: 10px;
   padding: 2px;
 }
