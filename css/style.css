@@ -448,6 +448,15 @@ header ul .fb:hover {
   overflow: hidden;
 }
 
+.about .rados:hover {
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
+}
+
 .about .rados:hover .rados-darken {
   left: 0px;
   -webkit-transition: all .9s;
@@ -774,6 +783,7 @@ header ul .fb:hover {
   display: grid;
   -ms-grid-columns: 300px 300px 300px;
       grid-template-columns: 300px 300px 300px;
+  margin-bottom: 1em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -793,6 +803,12 @@ header ul .fb:hover {
           transform: scale(1.1);
   -webkit-transition: .4s all;
   transition: .4s all;
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
 }
 
 .galerija img {
