@@ -646,6 +646,13 @@ header ul .fb:hover {
   color: gray;
 }
 
+.services .usluga h3 {
+  font-size: 2.5em;
+  color: #0046a5;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
 .services h2 {
   margin-bottom: 1em;
 }
@@ -666,29 +673,53 @@ header ul .fb:hover {
           align-items: center;
   /* Firefox */
   /* WebKit */
-  -webkit-transition: all .5s ease-in;
+  -webkit-transition: all .4s ease-in;
   /* Opera */
   /* Standard */
-  transition: all .5s ease-in;
+  transition: all .4s ease-in;
   border-radius: 20px;
 }
 
+.services div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .services div ul li {
-  list-style: none;
+  list-style-type: disc;
   font-size: 1.5em;
 }
 
 .services div:hover {
   padding: .5em;
-  color: black;
-  background-color: yellow;
+  color: white;
+  background-color: #0046a5;
   /* Firefox */
   /* WebKit */
-  -webkit-transition: all .5s ease-in;
+  -webkit-transition: all .4s ease-in;
   /* Opera */
   /* Standard */
-  transition: all .5s ease-in;
+  transition: all .4s ease-in;
   border-radius: 20px;
+}
+
+.services div:hover h3 {
+  color: white;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /*Galerija-------------------------------------------------*/
@@ -750,7 +781,18 @@ header ul .fb:hover {
       -ms-flex-align: center;
           align-items: center;
   grid-gap: 5px;
-  height: 100vh;
+}
+
+.galerija #slika {
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+.galerija #slika:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .4s all;
+  transition: .4s all;
 }
 
 .galerija img {

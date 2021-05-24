@@ -398,6 +398,17 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
     @include flex-center;
     background-color: $bg-color;
     padding: 2em;
+    
+
+    .usluga{
+        h3{
+            font-size:2.5em;
+            color:$logo_plava;
+            transition: .4s all;
+        }
+    }
+
+    
     h2{
         margin-bottom: 1em;
     }
@@ -408,33 +419,44 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
         justify-content: center;
         align-items: center;
         ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             li{
-                list-style: none;
+                list-style-type:disc;
                 font-size: 1.5em;
             }
         }
         /* Firefox */
-        -moz-transition: all .5s ease-in;
+        -moz-transition: all .4s ease-in;
         /* WebKit */
-        -webkit-transition: all .5s ease-in;
+        -webkit-transition: all .4s ease-in;
         /* Opera */
-        -o-transition: all .5s ease-in;
+        -o-transition: all .4s ease-in;
         /* Standard */
-         transition: all .5s ease-in;
+         transition: all .4s ease-in;
          border-radius: 20px;
        
          &:hover{
             padding: .5em;
-            color: black;
-        background-color: yellow;
+            color: white;
+            background-color:$logo_plava;
+
+            h3{
+                color:white;
+                transition: .4s all;
+                transform:scale(1.2);
+            }
+    
         /* Firefox */
-        -moz-transition: all .5s ease-in;
+        -moz-transition: all .4s ease-in;
         /* WebKit */
-        -webkit-transition: all .5s ease-in;
+        -webkit-transition: all .4s ease-in;
         /* Opera */
-        -o-transition: all .5s ease-in;
+        -o-transition: all .4s ease-in;
         /* Standard */
-         transition: all .5s ease-in;
+         transition: all .4s ease-in;
          border-radius: 20px;
         }
     }
@@ -455,12 +477,20 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 .galerija{
     display: grid;
     grid-template-columns: 300px 300px 300px;
+
+
+    #slika{
+        transition: .4s all;
+        &:hover{
+            transform: scale(1.1);
+            transition: .4s all;
+        }
+    }
  
     
     justify-content: center;
     align-items: center;
     grid-gap: 5px;
-    height: 100vh;
     img{
         width: 300px;
         height: 300px;
